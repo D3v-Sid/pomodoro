@@ -31,8 +31,11 @@ const Button = ({ text, type, onClick }) => {
 
 	return (
 		<>
+			{/* IconContext to provide custom display for icons */}
 			<IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
-				<button className={type} onClick={onClick}>
+				{/* Return the button, with a dynamic classname : NOT WORKING RIGHT NOW */}
+				<button className={{ type } + "-btn"} onClick={onClick}>
+					{/* For the navbar buttons, add an icon named like the text */}
 					{type === "navbar" && iconPicker(text)} {text}
 				</button>
 			</IconContext.Provider>

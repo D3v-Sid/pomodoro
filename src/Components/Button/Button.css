@@ -11,17 +11,17 @@ button:active {
 	transition: 0.2s;
 }
 
-.navbar {
-	background: none rgba(255, 255, 255, 0.2);
+.navbar-btn {
+	background: tomato;
 	padding: 0.5rem;
 	width: 6rem;
 }
-.pomodoro {
+.pomodoro-btn {
 	font-size: 1.1rem;
 	font-weight: bold;
 	background: none rgba(0, 0, 0, 0.15);
 }
-.start {
+.start-btn {
 	font-size: 2rem;
 	font-weight: bolder;
 	background: white;

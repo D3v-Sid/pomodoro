@@ -1,0 +1,19 @@
+h1 {
+	font-size: 3vh;
+}
+
+.navbar {
+	width: 100%;
+	height: 6rem;
+	border: 1px solid red;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@media only screen and (max-width: 300px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+}
