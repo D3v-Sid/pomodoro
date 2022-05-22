@@ -10,12 +10,12 @@ import {
 /**
  * It takes in a text, type, and onClick function and returns a button with the text and type passed in
  * @param  text string
- * @param  type [navbar,pomodoro,start]
+ * @param  class [navbar-btn,pomodoro-btn,start-btn]
  * @param onClick  function
  *
  * @returns A button with the text and type passed in as props.
  */
-const Button = ({ text, type, onClick }) => {
+const Button = ({ text, classname, onClick }) => {
 	const iconPicker = text => {
 		switch (text) {
 			case "Report":
@@ -34,9 +34,9 @@ const Button = ({ text, type, onClick }) => {
 			{/* IconContext to provide custom display for icons */}
 			<IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
 				{/* Return the button, with a dynamic classname : NOT WORKING RIGHT NOW */}
-				<button className={{ type } + "-btn"} onClick={onClick}>
-					{/* For the navbar buttons, add an icon named like the text */}
-					{type === "navbar" && iconPicker(text)} {text}
+				<button className={classname} onClick={onClick}>
+					{/* For the navbar buttons, add an icon  */}
+					{classname === "navbar-btn" && iconPicker(text)} {text}
 				</button>
 			</IconContext.Provider>
 		</>

@@ -1,3 +1,4 @@
+/* GLOBAL */
 button {
 	border: none;
 	border-radius: 5px;
@@ -11,16 +12,23 @@ button:active {
 	transition: 0.2s;
 }
 
+/* NAVBAR */
 .navbar-btn {
 	background: tomato;
 	padding: 0.5rem;
 	width: 6rem;
 }
+@media only screen and (max-width: 600px) {
+}
+
+/* POMODODO */
 .pomodoro-btn {
 	font-size: 1.1rem;
 	font-weight: bold;
 	background: none rgba(0, 0, 0, 0.15);
 }
+
+/* START */
 .start-btn {
 	font-size: 2rem;
 	font-weight: bolder;

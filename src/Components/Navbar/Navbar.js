@@ -9,9 +9,9 @@ const Navbar = () => {
 		<div className="navbar">
 			<h1>Pomodoro</h1>
 			<nav>
-				<Button text={"Report"} type={"navbar"} onClick={handleClick} />
-				<Button text={"Setting"} type={"navbar"} onClick={handleClick} />
-				<Button text={"Login"} type={"navbar"} onClick={handleClick} />
+				<Button text={"Report"} classname={"navbar-btn"} onClick={handleClick} />
+				<Button text={"Setting"} classname={"navbar-btn"} onClick={handleClick} />
+				<Button text={"Login"} classname={"navbar-btn"} onClick={handleClick} />
 			</nav>
 		</div>
 	);
